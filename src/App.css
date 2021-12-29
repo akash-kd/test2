@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 20%;
 }
-a{
+a,p{
   margin-right: 10px;
   font-size: 25px;
 }

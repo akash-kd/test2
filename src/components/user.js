@@ -1,7 +1,7 @@
 import '../App.css'
 function User(){
     return (
-        <a>Hi, you are logged in!</a>
+        <p>Hi, you are logged in!</p>
     )
 }
 

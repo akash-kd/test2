@@ -15,12 +15,12 @@ function Login(){
 
     const onSumbit = async(e) =>{
         e.preventDefault()
-        if (JSON.stringify(user) != "{}"){
+        if (JSON.stringify(user) !== "{}"){
             setmess("user already logged in !!")
             console.log(user)
             return
         }
-        if (email.length == 0){
+        if (email.length === 0){
             setmess("email is empty")
             return 
         }
@@ -28,7 +28,7 @@ function Login(){
             setmess("email is badly formatted")
             return
         }
-        if (pass.length == 0){
+        if (pass.length === 0){
             setmess("password is empty")
             return 
         }
@@ -52,17 +52,17 @@ function Login(){
     return (
         <div className="App">
         <div>
-          <a>Email</a>
+          <p>Email</p>
           <input type="email" placeholder="email" required onChange={(e) => setemail(e.target.value)}/>
         </div>
         <div>
-          <a>password</a>
+          <p>password</p>
           <input type="password" placeholder="password" required onChange={(e) => setpass(e.target.value)}/>
         </div>
         <div>
             <input type="submit" value={'Submit'} onClick={(e) => onSumbit(e)}/>
         </div>
-        <a>{mess}</a>
+        <p>{mess}</p>
             
     </div>
     )

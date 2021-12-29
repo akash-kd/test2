@@ -1,7 +1,6 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {useState} from 'react';
-import axios from 'axios';
 import Signup from './components/signup';
 import Login from './components/login'
 import User from './components/user';
